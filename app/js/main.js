@@ -1,4 +1,7 @@
 import angular from 'angular';
+import ngMaterial from 'angular-material';
+import ngCookies from 'angular-cookies';
+import ngAnimate from 'angular-animate';
 
 // angular modules
 import constants from './constants';
@@ -13,6 +16,9 @@ import './directives';
 
 // create and bootstrap application
 const requires = [
+  ngMaterial,
+  ngCookies,
+  ngAnimate,
   'ui.router',
   'templates',
   'app.filters',
